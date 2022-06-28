@@ -63,7 +63,7 @@ nav a:link,
 nav a:visited {
   font-size: 25px;
   text-decoration: none;
-  color: #00ffff;
+  color: #49ffff;
   font-weight: bold;
   display: inline-block;
   margin: 0 10px;
@@ -116,6 +116,13 @@ h3 {
   border-left: 15px solid #b8a082;
 }
 
+h4 {
+  font-size: 23px;
+  color: #e9ff6b;
+  margin-bottom: 20px;
+  line-height: 1.75;
+}
+
 /* === Elements === */
 p {
   font-size: 19px;
@@ -141,8 +148,48 @@ p {
   margin-bottom: 0;
 }
 
-.section-projekty {
+/* === Link Styling === */
+
+a:link,
+a:visited {
+  color: #49ffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* === Projects section === */
+
+/* .section-projekty{} */
+
+.projects-list {
+  list-style: none;
+  margin: 40px 50px auto 40px;
+}
+
+.projects-list li .taruros-site-header h4 {
+  margin-bottom: 0;
+}
+
+.projects-list p {
+  margin-left: 0;
+}
+
+.projects-list li .taruros-site-header {
   text-align: center;
+  background: url("img/taruros-site-header-img.jpg");
+  background-position: 50% 70%;
+  background-color: #000000da;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.projects-list img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 30px;
 }
 
 /* === Courses List === */
@@ -164,6 +211,13 @@ p {
 }
 
 /* === Courses list items spacing === */
+.courses-list div {
+  margin: 0 10px 15px;
+}
+
+.courses-list p {
+  margin: 0;
+}
 
 .courses-list li {
   margin-bottom: 75px;
