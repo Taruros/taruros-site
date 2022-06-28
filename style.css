@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* === Scrollbar === */
+
+body::-webkit-scrollbar {
+  background-color: #000;
+  width: 10px;
+  height: 10px;
+}
+
+body::-webkit-scrollbar-button {
+  height: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e0ddda;
+  border-radius: 5px;
+}
+
+/* === Big Elements === */
+
+html {
+  scroll-behavior: smooth;
+  background: url("img/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  color: #e0ddda;
+  /* background-color: #333; */
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #333333f1;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+article {
+  margin-bottom: 70px;
+}
+
+.main-header {
+  margin-bottom: 50px;
+}
+
+nav {
+  text-align: center;
+  background-color: #e0ddda;
+  padding: 10px;
+}
+
+nav a:link,
+nav a:visited {
+  font-size: 25px;
+  text-decoration: none;
+  color: #00ffff;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.article-header {
+  margin-bottom: 60px;
+  margin-left: 30px;
+}
+
+.article-header p {
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 3px;
+  margin: 0 0 0 15px;
+}
+
+.article-div {
+  margin-bottom: 115px;
+}
+
+footer {
+  text-align: center;
+  font-size: 9pt;
+  padding: 10px;
+}
+
+/* === Headers === */
+
+h1 {
+  font-size: 45px;
+  color: #f0ab51;
+  text-align: center;
+  background-color: #e0ddda3a;
+  padding: 10px 0 10px 0;
+}
+
+h2 {
+  font-size: 50px;
+  color: #ff94fa;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 35px;
+  color: #b8a082;
+  padding-left: 15px;
+  margin: 0 0 20px 20px;
+  border-left: 15px solid #b8a082;
+}
+
+/* === Elements === */
+p {
+  font-size: 19px;
+  line-height: 1.75;
+  margin: 0 10px 15px 10px;
+}
+
+.section-o-mnie {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+}
+
+.taruros-icon {
+  width: 200px;
+  height: auto;
+  margin: 0 50px 0 25px;
+}
+
+.o-mnie-p {
+  width: 75%;
+  margin-bottom: 0;
+}
+
+.section-projekty {
+  text-align: center;
+}
+
+/* === Courses List === */
+
+.courses-list {
+  list-style: none;
+  margin: 40px 50px auto 40px;
+}
+
+/* === List elements flexbox styles === */
+
+.courses-list li:nth-child(odd) {
+  display: flex;
+}
+
+.courses-list li:nth-child(even) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* === Courses list items spacing === */
+
+.courses-list li {
+  margin-bottom: 75px;
+}
+
+.courses-list li:last-child {
+  margin-bottom: 0px;
+}
+
+/* === List element image margins === */
+
+.courses-list li:nth-child(odd) img {
+  height: 200px;
+  width: auto;
+  border-radius: 20px;
+  margin-right: 50px;
+}
+
+.courses-list li:nth-child(even) img {
+  height: 200px;
+  width: auto;
+  border-radius: 20px;
+  margin-left: 50px;
+}
+
+.courses-list .course-title {
+  font-size: 23px;
+  color: #e9ff6b;
+  margin-bottom: 10px;
+}
+
+/* === Strong === */
+
+strong {
+  color: #ffba3a;
+}
+
+.green-strong {
+  color: lightgreen;
+}
+
+/* === Buttons === */
+.button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+  left: 20px;
+  cursor: pointer;
+}
+
+.fb-button {
+  bottom: 20px;
+  background: url("img/facebook.png");
+  background-size: cover;
+}
+
+.ig-button {
+  bottom: 90px;
+  background: url("img/instagram.jfif");
+  background-size: cover;
+}
+
+.twitter-button {
+  bottom: 160px;
+  background: url("img/twitter.png");
+  background-size: cover;
+}
+
+.start-button:link,
+.start-button:visited {
+  text-decoration: none;
+  font-size: 60px;
+
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+}
