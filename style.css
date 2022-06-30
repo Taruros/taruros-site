@@ -54,9 +54,12 @@ article {
 }
 
 nav {
-  text-align: center;
   background-color: #e0ddda;
   padding: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  /* gap: 20px; */
 }
 
 nav a:link,
@@ -66,7 +69,6 @@ nav a:visited {
   color: #49ffff;
   font-weight: bold;
   display: inline-block;
-  margin: 0 10px;
 }
 
 .article-header {
@@ -82,7 +84,7 @@ nav a:visited {
 }
 
 .article-div {
-  margin-bottom: 115px;
+  margin-bottom: 120px;
 }
 
 footer {
@@ -112,7 +114,7 @@ h3 {
   font-size: 35px;
   color: #b8a082;
   padding-left: 15px;
-  margin: 0 0 20px 20px;
+  margin: 0 0 30px 20px;
   border-left: 15px solid #b8a082;
 }
 
@@ -131,21 +133,24 @@ p {
 }
 
 .section-o-mnie {
+  margin-left: 35px;
+  margin-right: 35px;
   display: flex;
-  justify-content: left;
   align-items: center;
+  justify-content: center;
+  gap: 50px;
   position: relative;
 }
 
 .taruros-icon {
   width: 200px;
   height: auto;
-  margin: 0 50px 0 25px;
 }
 
 .o-mnie-p {
-  width: 75%;
-  margin-bottom: 0;
+  margin: 0;
+  flex: 1 1;
+  text-align: justify;
 }
 
 /* === Link Styling === */
@@ -163,26 +168,48 @@ a:visited {
 
 .projects-list {
   list-style: none;
-  margin: 40px 50px auto 40px;
-}
-
-.projects-list li .taruros-site-header h4 {
-  margin-bottom: 0;
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
 }
 
 .projects-list p {
   margin-left: 0;
 }
 
-.projects-list li .taruros-site-header {
+.projects-list li {
+  padding-bottom: 30px;
+  border-bottom: 3px solid #cfc5b82f;
+  border-radius: 1px;
+}
+
+.projects-list li:last-child {
+  padding-bottom: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.projects-list .project-header {
   text-align: center;
-  background: url("img/taruros-site-header-img.jpg");
-  background-position: 50% 70%;
-  background-color: #000000da;
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+}
+
+.projects-list li .project-header h4 {
+  margin-bottom: 0;
+}
+
+.projects-list li .taruros-site-header {
+  background: url("img/taruros-site-header-img.jpg");
+  background-position: 50% 70%;
+}
+
+.projects-list .flexbox-abusers-header {
+  background: url("https://webolog.net/wp-content/uploads/2021/12/CSS-FLEXBOX.png");
+  background-position: 50% 52%;
 }
 
 .projects-list img {
@@ -201,26 +228,38 @@ a:visited {
 
 /* === List elements flexbox styles === */
 
-.courses-list li:nth-child(odd) {
+.courses-list li {
   display: flex;
+  gap: 30px;
+  align-items: flex-start;
 }
 
 .courses-list li:nth-child(even) {
-  display: flex;
   flex-direction: row-reverse;
+  text-align: right;
 }
 
 /* === Courses list items spacing === */
-.courses-list div {
-  margin: 0 10px 15px;
+
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+}
+
+.courses-list h4 {
+  margin: 0;
+}
+
+.courses-list .course-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 35px;
 }
 
 .courses-list p {
   margin: 0;
-}
-
-.courses-list li {
-  margin-bottom: 75px;
 }
 
 .courses-list li:last-child {
@@ -229,18 +268,10 @@ a:visited {
 
 /* === List element image margins === */
 
-.courses-list li:nth-child(odd) img {
+.courses-list li img {
   height: 200px;
   width: auto;
   border-radius: 20px;
-  margin-right: 50px;
-}
-
-.courses-list li:nth-child(even) img {
-  height: 200px;
-  width: auto;
-  border-radius: 20px;
-  margin-left: 50px;
 }
 
 .courses-list .course-title {
@@ -255,7 +286,7 @@ strong {
   color: #ffba3a;
 }
 
-.green-strong {
+.green {
   color: lightgreen;
 }
 
